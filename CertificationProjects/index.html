@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satisfaction Survey Form</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body background="flowers-7837388_1920.jpg">
+    <form method="POST" id="survey-form">
+      <h1 id="title">Tenancy Satisfaction Survey</h1>
+      <p id="description">Help us make housing in our city better:</p>
+      <p id="description" class="paragraphAdddress">Southhouse Avenue</p>
+
+      <fieldset>
+        <label for="name" id="name-label"
+          >Enter your name:
+          <input
+            name="name"
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </label>
+        <label for="email" id="email-label"
+          >Enter email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+        /></label>
+
+        <label for="building-number"
+          >Building Number:
+          <input
+            type="number"
+            min="1"
+            max="20"
+            placeholder="Building number"
+            id="building-number"
+            required
+          />
+        </label>
+
+        <label for="number" id="number-label">
+          Your home number:
+          <input
+            type="number"
+            id="number"
+            min="1"
+            max="20"
+            placeholder="House Number"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="tenancy-status"
+          >Tenancy Status:
+          <select name="tenancy-status" id="dropdown">
+            <option value="">Please select</option>
+            <option value="1">Owner</option>
+            <option value="2">Private Tenant</option>
+            <option value="3">Council Tenant</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="rating" id="container-for-rating">
+        <label for="rating"
+          >On scale from 1-5 please let us know how satisfied you are with your
+          house
+          <input
+            type="radio"
+            name="one-to-five"
+            checked
+            id="rating"
+            value="1"
+          />
+          1 <input type="radio" name="one-to-five" id="rating" value="2" /> 2
+          <input type="radio" name="one-to-five" id="rating" value="3" /> 3
+          <input type="radio" name="one-to-five" id="rating" value="4" /> 4
+          <input type="radio" name="one-to-five" id="rating" value="5" /> 5
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="idea-checkbox">
+          What would make your neighbourhood better? (select all that apply)
+          <input
+            type="checkbox"
+            name="idea-checkbox"
+            id="idea-checkbox"
+            value="1"
+          />
+          New shops
+          <input
+            type="checkbox"
+            name="idea-checkbox"
+            id="idea-checkbox"
+            value="2"
+          />
+          Cleaner streets
+          <input
+            type="checkbox"
+            name="idea-checkbox"
+            id="idea-checkbox"
+            value="3"
+          />
+          Repaired pavements
+          <input
+            type="checkbox"
+            name="idea-checkbox"
+            id="idea-checkbox"
+            value="4"
+          />
+          New parking places
+        </label>
+      </fieldset>
+      <div class="commentarea">
+        <label for="comment"
+          >Would you like to add anything?
+          <textarea
+            id="comment"
+            cols="50"
+            rows="10"
+            placeholder="Yes! I would like to add something..."
+            name="comment"
+          ></textarea>
+        </label>
+      </div>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    <p id="thankyou">Thank you!</p>
+  </body>
+</html>
